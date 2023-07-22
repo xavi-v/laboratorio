@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>listar</title>
-</head>
-    <body>
+    <head>
+        <meta charset="UTF-8">
+        <title>listar</title>
+
+        {% load static %}
+    <link rel="stylesheet" href="{% static 'css/app.css' %}"/>
+    </head>
+  <body>
         <h1>lista de laboratorios</h1>
-        <table border="1">
+        <br>
+        <table border="3" bordercolor = "grey" background ={% static "/images/fondo1.jpg" %}>
+             <caption>Lista actualizada 2023</caption>
             <thead>
                 <tr>
                     <th>Nombre</th>
@@ -26,8 +31,23 @@
                     <td><a href="/laboratorio/laboratorio/{{ lab.id }}/delete">Eliminar</a></td>
                 </tr>
             {% endfor %}
-      </tbody>
-      </table>
-       <section> <a href="/laboratorio/laboratorio/create" >crear </a></section>
+        </tbody>
+        </table>
+        &nbsp;
+
+        <section>
+            <div>
+                <button> <a href="/laboratorio/laboratorio/create" >.Crear </a> </button>
+            </div>
+            &nbsp;&nbsp;
+
+            <div>
+              <script type="text/javascript" src="https://www.free-counters.org/count/ct3p"></script><br>
+                <a href='https://www.free-counters.org/'>www.free-counters.org</a> <script type='text/javascript' src='https://www.whomania.com/ctr?id=78e086b7cf7a5edeb53e3ecb08c4854087c8568b'></script>
+
+            </div>
+
+
+        </section>
     </body>
 </html>

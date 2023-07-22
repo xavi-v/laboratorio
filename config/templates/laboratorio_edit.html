@@ -2,10 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>editar</title>
+    <title>Editar</title>
 </head>
-<body>
-<h1>edit</h1>
+{% load static %}
+<body bgcolor="#f0f8ff">
+<h1>Edit</h1>
+<h3>modifica registros de Laboratorios</h3>
+  <img class="centrar" src={% static "/images/fondo2.jpg" %} alt="Cosa1" width="300" height="" align="left"/>
+
     <form method="POST">
         {% csrf_token %}
         {{  form.as_div }}

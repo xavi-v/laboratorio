@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>deletear</title>
 </head>
-<body>
-    <h1>delete</h1>
+<body bgcolor="#f0f8ff">
+    <h1>Delete</h1>
     <form method="post">
         {% csrf_token %}
         <fieldset>
@@ -14,7 +14,7 @@
                 <li>{{ lav.nombre }}</li>
             </ul>
         </fieldset>
-        <button type="submit">Sí, eliminar</button>
+        <button type="submit">Sí, eliminar de forma permanente</button>
     </form>
 </body>
 </html>
