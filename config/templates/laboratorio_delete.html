@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>deletear</title>
+</head>
+<body>
+    <h1>delete</h1>
+    <form method="post">
+        {% csrf_token %}
+        <fieldset>
+            <legend>Eliminar Registro ed Laboratorio?</legend>
+            <ul>
+                <li>{{ lav.nombre }}</li>
+            </ul>
+        </fieldset>
+        <button type="submit">Sí, eliminar</button>
+    </form>
+</body>
+</html>

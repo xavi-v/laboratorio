@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>editar</title>
+</head>
+<body>
+<h1>edit</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{  form.as_div }}
+        <button type="submit">Actualizar</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>listar</title>
+</head>
+    <body>
+        <h1>lista de laboratorios</h1>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Ciudad</th>
+                    <th>Pais</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for lab in listar %}
+                <tr>
+                    <td>{{ lab.nombre }}</td>
+                    <td>{{ lab.ciudad }}</td>
+                    <td>{{ lab.pais }}</td>
+                    <td><a href="/laboratorio/laboratorio/{{ lab.id }}/edit">Editar</a></td>
+                    <td><a href="/laboratorio/laboratorio/{{ lab.id }}/delete">Eliminar</a></td>
+                </tr>
+            {% endfor %}
+      </tbody>
+      </table>
+       <section> <a href="/laboratorio/laboratorio/create" >crear </a></section>
+    </body>
+</html>
