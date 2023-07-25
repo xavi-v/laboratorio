@@ -6,6 +6,8 @@
 
 </head>
 {% load static %}
+<link rel="stylesheet" href="{% static 'css/create.css' %}">
+
 <body bgcolor="#f0f8ff">
 
     <h1>Create</h1>
@@ -13,6 +15,7 @@
         {% csrf_token %}
         {{  form.as_div }}
         <button type="submit">Submit</button>
+        <a href="/">Home</a>
     </form>
 
 

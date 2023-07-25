@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
-
-body  {
-    background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
+body {
+       background-image: url('https://images.pexels.com/photos/442597/pexels-photo-442597.jpeg');
   background-size:cover;
         -webkit-animation: slidein 100s;
         animation: slidein 100s;
@@ -48,5 +46,13 @@ to {background-position: -100px 0px;background-size:2750px;}
   color:white;
   font-family: 'Source Code Pro', monospace;
   text-transform:uppercase;
-}
 
+}
+form div {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+    form div label {
+        display: block;
+}
+    form div input {}

@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/edit.css' %}">
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,7 +16,9 @@
     <form method="POST">
         {% csrf_token %}
         {{  form.as_div }}
+        <a href="/">Home</a>
         <button type="submit">Actualizar</button>
+        <script type="text/javascript" id="WolframAlphaScript686cb2746ee0273ebe0646575b074ca6" src="//www.wolframalpha.com/widget/widget.jsp?id=686cb2746ee0273ebe0646575b074ca6"></script>
     </form>
 </body>
 </html>
